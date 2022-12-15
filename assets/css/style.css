@@ -382,40 +382,6 @@ main {
   visibility: visible;
 }
 
-.contacts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-.contact-item {
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
-}
-
-.contact-title {
-  color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  text-transform: uppercase;
-  margin-bottom: 2px;
-}
-
-.contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
-  font-size: var(--fs-7);
-}
-
-.contact-info address {
-  font-style: normal;
-}
-
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -1149,10 +1115,6 @@ main {
   line-height: 1.6;
 }
 
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
-
 .mapbox {
   position: relative;
   height: 250px;
@@ -1172,10 +1134,6 @@ main {
   height: 100%;
   border: none;
   filter: grayscale(1) invert(1);
-}
-
-.contact-form {
-  margin-bottom: 10px;
 }
 
 .form-title {
@@ -1415,15 +1373,6 @@ textarea.form-input::-webkit-resizer {
     margin: 32px 0;
   }
 
-  .contacts-list {
-    gap: 20px;
-  }
-
-  .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
-  }
-
   /**
    * #NAVBAR
    */
@@ -1596,10 +1545,6 @@ textarea.form-input::-webkit-resizer {
     padding: 25px;
   }
 
-  /**
-   * #CONTACT
-   */
-
   .mapbox {
     height: 380px;
     border-radius: 18px;
@@ -1644,15 +1589,6 @@ textarea.form-input::-webkit-resizer {
 
   .has-scrollbar::-webkit-scrollbar-button {
     width: 100px;
-  }
-
-  /**
-   * SIDEBAR
-   */
-
-  .contacts-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 15px;
   }
 
   /**
@@ -1710,10 +1646,6 @@ textarea.form-input::-webkit-resizer {
   .blog-posts-list {
     grid-template-columns: 1fr 1fr;
   }
-
-  /**
-   * CONTACT
-   */
 
   .input-wrapper {
     grid-template-columns: 1fr 1fr;
@@ -1938,21 +1870,6 @@ textarea.form-input::-webkit-resizer {
     visibility: visible;
   }
 
-  .contacts-list {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-
   .separator:last-of-type {
     margin: 15px 0;
     opacity: 0;
@@ -2020,11 +1937,11 @@ textarea.form-input::-webkit-resizer {
   display: flex;
   gap: 9px;
 }
-@media only screen and (min-device-width: 200px) and (max-device-width: 560px) {
+/* @media only screen and (min-device-width: 200px) and (max-device-width: 560px) {
   .smallscreen-hide {
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 2000px) and (min-width: 600px) {
   .info-content > .profile-tabs {
